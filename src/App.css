@@ -3,7 +3,7 @@
     justify-content: space-evenly;
     grid-template-columns:33% 33% 33%; /*Make the grid smaller than the container*/
     gap: 10px;
-    background-color: #2196F3;
+    background-color: #627290 ;
     padding: 10px;
   }
   
@@ -20,21 +20,21 @@
     font-size: 1.2rem;
     border-radius: 25px;
     border: 1px solid black;
-    background: rgba(255,255,255, 0.1);    
+       
   }
 
-@media only screen and (min-width: 600px) {
-  .grid-container{grid-template-columns:50%}
-}
 
-@media only screen and (min-width: 992px) {
-  .grid-container{grid-template-columns:50%}
-}
-
-@media only screen and (min-width: 1200px) {
-  .grid-container{grid-template-columns:50%}
-}
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .grid-container{grid-template-columns:100%}
 
 }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .grid-container{grid-template-columns:50%}
+}
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .grid-container{grid-template-columns:50%}
+  }
