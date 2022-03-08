@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Api-Calls-Using-React/static/css/main.3d920055.css",
+    "main.js": "/Api-Calls-Using-React/static/js/main.d22898ae.js",
+    "index.html": "/Api-Calls-Using-React/index.html",
+    "main.3d920055.css.map": "/Api-Calls-Using-React/static/css/main.3d920055.css.map",
+    "main.d22898ae.js.map": "/Api-Calls-Using-React/static/js/main.d22898ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d920055.css",
+    "static/js/main.d22898ae.js"
+  ]
+}
