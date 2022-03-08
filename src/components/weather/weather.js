@@ -21,7 +21,7 @@ export default function WeatherAPI() {
 
   return (
     <div className='weather'>
-        <h1>Weather Information</h1>        
+        <h2>Weather Information</h2>        
             <div className='container'>
                 <div className="search">
                 <input

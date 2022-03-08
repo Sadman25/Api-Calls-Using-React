@@ -1,6 +1,7 @@
 import React from 'react'
 import WeatherAPI from './components/weather/weather';
 import QuranAPI from './components/Quran/Quran';
+import PhoneAPI from './components/phone/phone';
 import './App.css'
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
         <div className='Quran'>
           <QuranAPI/>
         </div>
-        <div>3</div>  
+        <div>
+        <PhoneAPI/>
+        </div>  
         
       </div>
 

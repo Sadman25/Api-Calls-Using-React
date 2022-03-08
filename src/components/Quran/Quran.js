@@ -21,7 +21,7 @@ export default function QuranAPI() {
   return (
     <div className='Quran'>      
       <div className='container'>
-              <h1>Quran Chapter Information</h1>
+              <h2>Quran Chapter Information</h2>
                 <div className="search">
                   <input
                   placeholder='Enter between 1-114'
