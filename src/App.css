@@ -14,7 +14,7 @@
     font-size: 30px;
   }
 
-.Quran input, .weather input, .ip input{
+.Quran input, .weather input, .phone input{
     margin-top: 2%;
     padding: .7rem 1.5rem;
     font-size: 1.2rem;
@@ -22,11 +22,19 @@
     border: 1px solid black;
     background: rgba(255,255,255, 0.1);    
   }
-/* .weather input{
-    margin-top: 2%;
-    padding: .7rem 1.5rem;
-    font-size: 1.2rem;
-    border-radius: 25px;
-    border: 1px solid black;
-    background: rgba(255,255,255, 0.1);   
-  } */
+
+@media only screen and (min-width: 600px) {
+  .grid-container{grid-template-columns:50%}
+}
+
+@media only screen and (min-width: 992px) {
+  .grid-container{grid-template-columns:50%}
+}
+
+@media only screen and (min-width: 1200px) {
+  .grid-container{grid-template-columns:50%}
+}
+@media only screen and (max-width: 600px) {
+  .grid-container{grid-template-columns:100%}
+
+}

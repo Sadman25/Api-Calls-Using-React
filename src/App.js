@@ -7,14 +7,14 @@ function App() {
   return (
     <div className="App">
       
-      <div class="grid-container">
+      <div className='grid-container'>
         <div className='weather'>
           <WeatherAPI/>
         </div>
         <div className='Quran'>
           <QuranAPI/>
         </div>
-        <div>
+        <div className='phone'>
         <PhoneAPI/>
         </div>  
         
