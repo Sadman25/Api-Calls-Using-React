@@ -6,29 +6,21 @@ import './App.scss'
 function App() {
   return (
     <div className="App">
-      
       <div className='grid-container'>
+        
         <div className='weather'>
           <WeatherAPI/>
         </div>
+
         <div className='Quran'>
           <QuranAPI/>
         </div>
+
         <div className='phone'>
         <PhoneAPI/>
-        </div>  
-        
-      </div>
-
-
-      
-
-      <div className='New'>
-        <div className='container'>
-          
-        </div>        
-      </div>
-      
+        </div> 
+         
+      </div>    
     </div>
   );
 }
