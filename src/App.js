@@ -2,7 +2,7 @@ import React from 'react'
 import WeatherAPI from './components/weather/weather';
 import QuranAPI from './components/Quran/Quran';
 import PhoneAPI from './components/phone/phone';
-import './App.css'
+import './App.scss'
 function App() {
   return (
     <div className="App">

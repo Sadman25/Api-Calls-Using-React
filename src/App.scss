@@ -1,3 +1,5 @@
+
+
 .grid-container {
     display: grid;
     justify-content: space-evenly;
@@ -14,27 +16,30 @@
     font-size: 30px;
   }
 
-.Quran input, .weather input, .phone input{
-    margin-top: 2%;
-    padding: .7rem 1.5rem;
-    font-size: 1.2rem;
-    border-radius: 25px;
-    border: 1px solid black;
-       
+.Quran , .weather , .phone {
+    input{
+      margin-top: 2%;
+      padding: .7rem 1.5rem;
+      font-size: 1.2rem;
+      border-radius: 25px;
+      border: 1px solid black;
+    }
   }
 
-
+$extraSmallPhone : 600px;
+$smallPhone:600px;
+$largeDevice:992px;
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: $extraSmallPhone) {
   .grid-container{grid-template-columns:100%}
 
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: $smallPhone) {
   .grid-container{grid-template-columns:50%}
 }
 
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: $largeDevice) {
     .grid-container{grid-template-columns:50%}
   }

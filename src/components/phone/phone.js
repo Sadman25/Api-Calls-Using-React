@@ -6,6 +6,11 @@ export default function PhoneAPI() {
     const [mobile, setMobile] = useState();
     
     const url = `https://phonevalidation.abstractapi.com/v1/?api_key=ecb360c2a34748dbac2c07c75394f5f3&phone=${mobile}`
+    const handleMobile=(e)=>{       
+            
+            setMobile(e.target.value) 
+        
+    }
 
  const search = (e)=> {
     if (e.key ==='Enter'){
@@ -27,7 +32,7 @@ export default function PhoneAPI() {
                 placeholder='Must add +88'                
                 type="text"
                 value={mobile}
-                onChange={(e)=>setMobile(e.target.value)}
+                onChange={handleMobile}
                 onKeyPress={search}
                 />
             </div>
