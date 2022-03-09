@@ -2,15 +2,18 @@ import React, { useState } from 'react'
 import axios from 'axios';
 export default function QuranAPI() {
   
+  //const [error,setError] = useState()
   const [chapter,setChapter] = useState('');
   const [data,setData] = useState();
   const url = `https://api.quran.com/api/v4/chapters/${chapter}?language=en`
 
   const handleChapter= (e)=>{
-    if(e.target.value>114 || e.target.value<1){
-      window.alert('The input should be between 1 and 114')
-    }else{
-      setChapter(e.target.value)
+    const temp = e.target.value;
+    if(temp ===0 || temp>114){
+      document.getElementsByTagName('small').innerHTML='Input must be between 1-114'
+    }
+    else{
+      setChapter(temp)
     }
     
   }
@@ -30,6 +33,7 @@ export default function QuranAPI() {
     <div className='Quran'>      
       <div className='container'>
               <h2>Quran Chapter Information</h2>
+              <small></small>
                 <div className="search">
                   <input
                   placeholder='Enter between 1-114'

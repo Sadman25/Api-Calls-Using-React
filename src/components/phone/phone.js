@@ -7,8 +7,12 @@ export default function PhoneAPI() {
     
     const url = `https://phonevalidation.abstractapi.com/v1/?api_key=ecb360c2a34748dbac2c07c75394f5f3&phone=${mobile}`
     const handleMobile=(e)=>{       
-            
+        const number = e.target.value
+        if(number.match(".*\\d.*")){
+            document.getElementsByTagName('small').innerHTML='Input can not be string'
+        }else{
             setMobile(e.target.value) 
+        }
         
     }
 
@@ -24,9 +28,10 @@ export default function PhoneAPI() {
 }
 
   return (
-    <div className='ip'>
-        <h2>Phone Number Validation</h2>
+    <div className='ip'>        
         <div className='container'>
+            <h2>Phone Number Validation</h2>
+            <small></small>
             <div className="search">
                 <input
                 placeholder='Must add +88'                
